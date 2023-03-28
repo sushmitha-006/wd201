@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+<title> REGISTRATION FORM </title>
+    <style>
+        input#name:invalid:focus
+        {
+            border: 3px solid red;
+        }
+        input#email:invalid:focus
+        {
+            border: 3px solid red;
+        }
+
+    </style>
+</head>
+<body>
+<form id="register-form">
+    <div class="relative flex min-h-40 flex col justify-center overflow-hidden py-10 bg-gray-50">
+<div class="relative bg-white px-6 pt-5 pb-5 shadow-xxl ring-2 ring-gray-900/5 sm:mx-w-lg  sm:rounded-lg sm:px-10">
+    <div class="mx-auto max-w-md">
+    <h2 class="text-2xl text-center font-bold leading-tight">REGISTRATION FORM</h2>
+    <div class="divide-y divide-gray-317/45">
+    <div class="space-y-5 py-7 text-base leading 7 text-gray-599">
+    <label  style=" font-size:larger;" class="text-md w-40 inline-block leading-5" for="name">Name</label>
+    <input required style="font-size:larger; background-color: rgb(240, 240, 240); " class="inline-block rounded-lg shadow-md px-3 py-3 text-base leading-5 "  type="text" id="name" name="name" placeholder="Enter your name">
+<br>
+<br>
+    <label  style="  font-size: larger;"  class="text-md w-40 inline-block leading-5" for="email">Email</label>
+    <input required style="font-size: larger; background-color: rgb(240, 240, 240);" class="inline-block rounded-lg shadow-md px-3 py-3 text-base leading-5 " type="email" id="email" name="email" placeholder="Enter your email id" >
+<br>
+<br>
+    <label style=" font-size: larger;"  class="text-md w-40 inline-block leading-5"for="password">Password</label>
+    <input required  style="font-size: larger; background-color:rgb(240, 240, 240);" class="inline-block rounded-lg shadow-md px-3 py-3 text-base leading-5 " type="password" id="password" name="password" placeholder="Enter your password">
+<br>
+<br>
+
+    <label style=" font-size: larger;"  class="text-md w-40 inline-block leading-5" for="dob">Date of Birth</label>
+    <input required  style="font-size: larger; background-color: rgb(240, 240, 240); " class="inline-block rounded-lg shadow-md px-3 py-3 text-base leading-5 " min="1968-03-13" max="2005-03-13" type="date" id="dob" name="dob" >
+<br>
+<br>
+    <input style="font-size: larger; background-color: rgb(240, 240, 240);" class="inline-block rounded-lg shadow-md px-3 py-3 text-base leading-5 " type="checkbox"  id="acceptTerms" name="acceptTerms">
+    <label style="font-size: large; " for="acceptTerms"> Accept Terms and Conditions &nbsp; </label> <br>
+    <button style="font-size: larger;  color: whitesmoke;" class="w-fit rounded-lg shadow-lg px-6 py-3 bg-green-500  hover:bg-greem-400 focus:outline-none focus:shadow-outline" type="submit">Submit Form</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div
+    class="relative bg-red px-10 mt-5 pt-10 pb-8 shadow-xl ring-2 ring-black sm:mx-auto sm:rounded-lg sm:px-10">
+    <div class="max-auto">
+            <h2 class="text-2xl text-center font-bold leading-tight"> ENTRIES </h2>
+            <div class="divide-y divide-gray-317/50 " id="register-entries"></div>
+    </div>
+
+</div>
+
+<script src="./registration.js"> </script>
+
+
+</form>
+</body>
+</html>
